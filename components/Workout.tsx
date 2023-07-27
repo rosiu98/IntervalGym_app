@@ -142,8 +142,10 @@ const Workout: React.FC = () => {
     <div>
         {startWorkout && (
           <div className='mb-20'>
-          <div className="bg-blue-400 p-3 font-medium text-white">
-              Cycle {count}
+          <div className="bg-blue-400 p-3 font-medium text-white flex flex-row justify-between items-center">
+              <div>Cycle {count}</div>
+
+              <div>Run Speed: {interval.speed}</div>
           </div>
           </div>
         )}
